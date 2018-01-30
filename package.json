@@ -1,0 +1,44 @@
+{
+  "name": "react-transparent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "scripts": {
+    "build": "babel esm --out-dir cjs",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weiliy/react-transparent.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "component",
+    "react-transparent",
+    "transparent"
+  ],
+  "author": "Weili Yi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weiliy/react-transparent/issues"
+  },
+  "homepage": "https://github.com/weiliy/react-transparent#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^22.1.4",
+    "react-test-renderer": "^16.2.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0"
+  },
+  "jest": {
+    "verbose": true
+  }
+}
