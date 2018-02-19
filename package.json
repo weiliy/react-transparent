@@ -1,11 +1,10 @@
 {
   "name": "react-transparent",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
-  "main": "./cjs/index.js",
-  "module": "./esm/index.js",
+  "main": "./umd/index.js",
   "scripts": {
-    "build": "babel esm --out-dir cjs",
+    "build": "babel esm --out-dir umd",
     "prepublishOnly": "npm run build",
     "test": "jest"
   },
@@ -30,6 +29,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.1.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "jest": "^22.1.4",
