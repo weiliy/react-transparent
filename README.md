@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/weiliy/react-transparent.svg?branch=master)](https://travis-ci.org/weiliy/react-transparent)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/5978d1648773ce0ffa6c/maintainability)](https://codeclimate.com/github/weiliy/react-transparent/maintainability)
+
 Make a component can be ommitted on demand. For example, omit a tag when didnot have title.
 
 ## Getting Started
