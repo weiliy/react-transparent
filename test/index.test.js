@@ -1,5 +1,5 @@
 import React from 'react';
-import T from '../esm';
+import T from '../src';
 import renderer from 'react-test-renderer';
 
 const Link = ({ children, page }) => (

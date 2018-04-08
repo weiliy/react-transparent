@@ -1,10 +1,13 @@
 {
   "name": "react-transparent",
-  "version": "1.1.1",
-  "description": "",
-  "main": "./umd/index.js",
+  "version": "1.1.2",
+  "description": "Make a component transparent",
+  "main": "./dist/umd/index.js",
+  "module": "./dist/esm/index.js",
   "scripts": {
-    "build": "babel esm --out-dir umd",
+    "build": "npm run umd && npm run esm",
+    "umd": "babel src -d ./dist/umd",
+    "esm": "babel src -d ./dist/esm --no-babelrc --presets=react",
     "prepublishOnly": "npm run build",
     "test": "jest"
   },
@@ -33,10 +36,11 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "jest": "^22.1.4",
-    "react-test-renderer": "^16.2.0"
-  },
-  "dependencies": {
+    "react-test-renderer": "^16.2.0",
     "react": "^16.2.0"
+  },
+  "peerDependencies": {
+    "react": ">= 15"
   },
   "jest": {
     "verbose": true
